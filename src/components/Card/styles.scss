@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 8px;
+  padding: 10px 4px;
+  width: 32px;
+  height: 32px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 5px #D5D5D5;
+  cursor: pointer;
+  transition: box-shadow 1.5s ease;
+  
+  & > span {
+    visibility: hidden;
+  } 
+}
+
+.card.active{
+  & > span {
+    visibility: visible;
+  }
+}
+
+.founded {
+  box-shadow: 0px 0px 5px 5px rgb(144, 144, 208);
+}

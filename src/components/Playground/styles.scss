@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.playground {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 602px;
+  border: 1px solid #D5D5D5;
+
+  @media (max-width: 768px) {
+    max-width: 350px;
+  }
+}
