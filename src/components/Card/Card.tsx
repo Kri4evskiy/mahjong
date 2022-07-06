@@ -1,13 +1,13 @@
 import './styles.scss'
 
 type Props = {
-  num: number
+  cardNumber: number
   cardClickHandler: (event: React.MouseEvent<HTMLElement>) => void
   openedNumbers: number[]
 }
 
 export const Card: React.FC<Props> = ({
-  num,
+  cardNumber,
   cardClickHandler,
   openedNumbers,
 }) => {
@@ -18,7 +18,7 @@ export const Card: React.FC<Props> = ({
         openedNumbers.length < 2 && cardClickHandler(event)
       }}
     >
-      <span>{num}</span>
+      <span>{cardNumber}</span>
     </div>
   )
 }

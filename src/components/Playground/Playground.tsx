@@ -35,7 +35,7 @@ export const Playground: React.FC = () => {
         })
       }
 
-      setTimeout(() => setOpenedNumbers([]), 1000)
+      clearNumbersTimeout = setTimeout(() => setOpenedNumbers([]), 1000)
     }
     return () => {
       clearTimeout(timeout)
@@ -61,10 +61,10 @@ export const Playground: React.FC = () => {
       <h2>Mahjong-like game</h2>
 
       <div className='playground'>
-        {randomizedArray.map((num, index) => (
+        {randomizedArray.map((cardNumber, index) => (
           <Card
             key={index}
-            num={num}
+            cardNumber={cardNumber}
             cardClickHandler={cardClickHandler}
             openedNumbers={openedNumbers}
           />
