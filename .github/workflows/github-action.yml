@@ -10,5 +10,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Run TESTS ----------
-        run: yarn test
+        run: npm run test
       - run: echo "🍏 This job's status is ${{ job.status }}."
